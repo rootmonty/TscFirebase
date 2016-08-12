@@ -160,6 +160,16 @@
             android:layout_marginTop="16dp"
             android:text="@string/remove_user"
             android:textStyle="bold" />
+        <Button
+            android:id="@+id/feedback"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="feedback"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/sign_out"

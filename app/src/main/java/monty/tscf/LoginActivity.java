@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,4 +111,9 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void signup(View v){
+        startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+    }
+
 }
