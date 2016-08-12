@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "443420572622",
+    "firebase_url": "https://tscf-b4925.firebaseio.com",
+    "project_id": "tscf-b4925",
+    "storage_bucket": "tscf-b4925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443420572622:android:01b4401d45da47e0",
+        "android_client_info": {
+          "package_name": "monty.tscf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443420572622-e2r191nogfgr390lsi6j67qplndqa8o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjgFcFpMt1wrsiX8OU_BN7NM5EhEdI8gU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
