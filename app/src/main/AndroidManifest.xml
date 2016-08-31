@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".ResetPasswordActivity"/>
         <activity android:name=".Feedback"/>
+        <activity android:name=".FinalTScore" />
 
 
     </application>

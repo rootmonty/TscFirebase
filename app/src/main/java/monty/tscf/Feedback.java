@@ -13,37 +13,57 @@ import com.firebase.client.Firebase;
 
 import org.json.JSONObject;
 
+import java.util.Random;
+
 /**
  * Created by monty on 12/8/16.
  */
 public class Feedback extends AppCompatActivity {
 
-   EditText q1,q2,q3,q4;
-    Button b1,b2;
-    String details;
-   Firebase mRef ;
+    EditText q1, q2, q3, q4, q5, q6, q7;
+    Button b1, b2;
+    StudentDetails studentDetails;
+    // String details;
+    Firebase mRef;
+
     @Override
-  protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.feedback);
-       Firebase.setAndroidContext(this);
+        Firebase.setAndroidContext(this);
 
-        q1=(EditText) findViewById(R.id.etq1);
-        q2=(EditText) findViewById(R.id.etq2);
-        q3=(EditText) findViewById(R.id.etq3);
-        q4=(EditText) findViewById(R.id.etq4);
-        b1=(Button) findViewById(R.id.bsubmit);
-        b2=(Button) findViewById(R.id.bback);
+        q1 = (EditText) findViewById(R.id.etq1);
+        q2 = (EditText) findViewById(R.id.etq2);
+        q3 = (EditText) findViewById(R.id.etq3);
+        q4 = (EditText) findViewById(R.id.etq4);
+        q5 = (EditText) findViewById(R.id.etq5);
+        q6 = (EditText) findViewById(R.id.etq6);
+        q7 = (EditText) findViewById(R.id.etq7);
 
-        details = q1.getText().toString()+q2.getText().toString()+q3.getText().toString()+q4.getText().toString();
-        mRef = new Firebase("https://tscf-b4925.firebaseio.com/");
+        b1 = (Button) findViewById(R.id.bsubmit);
+        b2 = (Button) findViewById(R.id.bback);
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Object obj = new Object();
-                obj=(Object) details;
-                mRef.child("Details").setValue(obj);
+                //Random r = new Random();
+                // r=r % 10;
+                studentDetails = new StudentDetails();
+                studentDetails.setAnswer1(q1.getText().toString());
+                studentDetails.setAnswer2(q2.getText().toString());
+                studentDetails.setAnswer3(q3.getText().toString());
+                studentDetails.setAnswer4(q4.getText().toString());
+                studentDetails.setAnswer5(q5.getText().toString());
+                studentDetails.setAnswer6(q6.getText().toString());
+                studentDetails.setAnswer7(q7.getText().toString());
+                // details = q1.getText().toString() + q2.getText().toString() + q3.getText().toString() + q4.getText().toString();
+                mRef = new Firebase("https://tscf-b4925.firebaseio.com/");
+                //  Object obj = new Object();
+                //  obj = (Object) details;
+                // mRef.child("#" + r.toString()).setValue(studentDetails);
+                mRef.push().child("Detail").setValue(studentDetails);
+
             }
         });
 
@@ -54,14 +74,17 @@ public class Feedback extends AppCompatActivity {
                 q2.setText(null);
                 q3.setText(null);
                 q4.setText(null);
-                startActivity(new Intent(Feedback.this , MainActivity.class));
-                finish();
+                q5.setText(null);
+                q6.setText(null);
+                q7.setText(null);
+                // q4.setText(null);
+
+
+                startActivity(new Intent(Feedback.this, FinalTScore.class));
+                //finish();
             }
         });
 
     }
-
-
-
 
 }
