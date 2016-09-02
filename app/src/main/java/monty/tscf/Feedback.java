@@ -2,7 +2,6 @@ package monty.tscf;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,7 +18,7 @@ import java.util.Random;
  * Created by monty on 12/8/16.
  */
 public class Feedback extends AppCompatActivity {
-
+/*
     EditText q1, q2, q3, q4, q5, q6, q7;
     Button b1, b2;
     StudentDetails studentDetails;
@@ -86,5 +85,6 @@ public class Feedback extends AppCompatActivity {
         });
 
     }
+    */
 
 }

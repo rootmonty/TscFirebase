@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         bfeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Feedback.class));
+                startActivity(new Intent(MainActivity.this, monty.tscf.Transitions.MainActivity.class));
             }
         });
 

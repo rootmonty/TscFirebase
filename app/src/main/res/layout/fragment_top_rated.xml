@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:overScrollMode="ifContentScrolls">
+    android:fitsSystemWindows="true"
+    tools:context=".Feedback">
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        tools:context=".Feedback">
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@color/bg_main"
+                android:background="@color/standardwhite"
                 android:orientation="vertical">
 
                 <TextView
@@ -32,10 +33,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="20dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/standardblack"
                     android:imeOptions="actionNext"
                     android:padding="20dp"
                     android:text="FEEDBACK FORM"
+                    android:textColor="@color/standardwhite"
                     android:textStyle="italic" />
             </LinearLayout>
 
@@ -49,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:hint="How would you rate the Teaching Ambience?"
                     android:imeOptions="actionNext"
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -61,6 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="How much reliable Class Work was ?"
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -73,7 +77,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="How comforting was the study material ?"
+
                     android:imeOptions="actionNext"
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -86,7 +92,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="Behaviour of Staff towards Students "
+
                     android:imeOptions="actionNext"
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -100,6 +108,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Type of Difficulty of Test papers?"
                     android:imeOptions="actionNext"
+
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -114,6 +124,8 @@
                     android:layout_height="wrap_content"
                     android:hint="How was the exercises?"
                     android:imeOptions="actionNext"
+
+                    android:maxLength="1"
                     android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
 
@@ -127,6 +139,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Overall Rating for the teachers?"
                     android:imeOptions="actionDone"
+
+                    android:maxLength="1"
                     android:textColor="#000" />
 
             </android.support.design.widget.TextInputLayout>
@@ -141,25 +155,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp">
-            <Button
-                android:id="@+id/bsubmit"
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:padding="10dp"
-                android:text="Submit" />
 
-            <Button
-                android:id="@+id/bback"
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:text="Find TSCORE" />
+                <Button
+                    android:id="@+id/bsubmit"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/standardblack"
+                    android:padding="10dp"
+                    android:text="Submit Generic Data"
+                    android:textColor="@color/standardwhite" />
+
+                <Button
+                    android:id="@+id/bback"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/standardblack"
+                    android:text="Go Next"
+                    android:textColor="@color/standardwhite" />
             </LinearLayout>
         </LinearLayout>
-    </android.support.design.widget.CoordinatorLayout>
-</ScrollView>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
