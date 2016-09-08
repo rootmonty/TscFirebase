@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RatingBar;
 import android.widget.Toast;
 
 import monty.tscf.R;
@@ -14,8 +15,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     String[] name = {"Teacher1", "Teacher2", "Teacher3", "Teacher4",
             "Teacher5", "Teacher6", "Teacher7", "Hmk", "Jt", "Jr"};
+    // RatingBar ratingBar;
     Context context;
     LayoutInflater inflater;
+
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -49,6 +52,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
         holder.tv2.setTag(holder);
         holder.imageView.setOnClickListener(clickListener);
         holder.imageView.setTag(holder);
+
     }
 
     @Override

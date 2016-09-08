@@ -1,11 +1,14 @@
 package monty.tscf.Transitions;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,14 +28,26 @@ import monty.tscf.StudentDetails;
 public class TopRatedFragment extends Fragment {
 
     public static final String TAG = "TAG";
+    RecyclerView recyclerView2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_top_rated, container, false);
+        View rootView = inflater.inflate(R.layout.cardviewrecycler, container, false);
+        recyclerView2 = (RecyclerView) rootView.findViewById(R.id.my_recycler_view2);
+
+        CardAdapter cardAdapter = new CardAdapter(getContext());
+        recyclerView2.setAdapter(cardAdapter);
+        recyclerView2.setHasFixedSize(true);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+       /*
+       //OLD CODE Till the use of static layout inflation
+       //NEW CODE LIES ABOVE
 
         final EditText q1, q2, q3, q4, q5, q6, q7;
+
         final Button b1, b2;
         final StudentDetails studentDetails;
         studentDetails = new StudentDetails();
@@ -91,7 +106,7 @@ public class TopRatedFragment extends Fragment {
                 Log.i(TAG, "This is working till here");
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 Log.i(TAG, "Fragment Created ");
-                fragmentTransaction.replace(((RelativeLayout) getView().getParent()).getId(), fragnew)
+                fragmentTransaction.replace(R.id.teacher, fragnew)
                         .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                 Log.i(TAG, "WTF is wrong here");
 
@@ -99,6 +114,8 @@ public class TopRatedFragment extends Fragment {
                 //finish();
             }
         });
+        */
+
 
         return rootView;
     }

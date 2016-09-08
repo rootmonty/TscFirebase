@@ -15,6 +15,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import monty.tscf.*;
+import monty.tscf.MainActivity;
 
 
 public class MoviesFragment extends Fragment {
@@ -53,7 +54,7 @@ public class MoviesFragment extends Fragment {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(MoviesFragment.this, monty.tscf.MainActivity.class));
+                startActivity(new Intent(getActivity(), MainActivity.class));
 
             }
         });
