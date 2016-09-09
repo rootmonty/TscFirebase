@@ -9,7 +9,9 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/standardwhite"></android.support.design.widget.AppBarLayout>
+        android:background="@color/standardwhite">
+
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/my_recycler_view"

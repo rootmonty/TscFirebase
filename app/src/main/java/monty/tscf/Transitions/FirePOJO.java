@@ -5,14 +5,15 @@ package monty.tscf.Transitions;
  */
 public class FirePOJO {
 
-    int rating;
+    //int rating;
+    String rating;
     String editfeed;
 
-    public int getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(int rate) {
+    public void setRating(String rate) {
         this.rating = rate;
     }
 

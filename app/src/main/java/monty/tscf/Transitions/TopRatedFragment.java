@@ -29,7 +29,7 @@ public class TopRatedFragment extends Fragment {
 
     public static final String TAG = "TAG";
     RecyclerView recyclerView2;
-
+    Button button2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class TopRatedFragment extends Fragment {
         recyclerView2.setHasFixedSize(true);
         recyclerView2.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+        button2 = (Button) rootView.findViewById(R.id.button);
        /*
        //OLD CODE Till the use of static layout inflation
        //NEW CODE LIES ABOVE

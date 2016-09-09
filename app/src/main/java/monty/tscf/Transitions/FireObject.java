@@ -17,5 +17,10 @@ public class FireObject {
         this.value = value;
     }
 
+    public void addValue(FirePOJO obj) {
+        value.add(obj);
+
+    }
+
 
 }

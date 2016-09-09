@@ -26,16 +26,19 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
 
     Context context;
     LayoutInflater inflater;
-    Firebase mref;
-    FireObject value;
-    FirePOJO longvalue;
+    // Firebase mref;
+    // FireObject values;
+    // FirePOJO valuenew;
 
     public CardAdapter(Context context) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
+        //  mref = new Firebase("https://tscf-b4925.firebaseio.com/database/");
+
 
     }
+
 
    /* View.OnClickListener clicklistener1 = new View.OnClickListener() {
         @Override
@@ -73,9 +76,15 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
     public void onBindViewHolder(CardViewholder holder, int position) {
 
         holder.ques.setText(ques[position]);
-        holder.ratingBar.getRating();
+        //holder.ratingBar.getRating();
+        // holder.radioGroup.getCheckedRadioButtonId();
         holder.changes.setText("How would you like to change");
+        //  value.setRating(holder.b);
         holder.change.getText();
+        //  valuenew.setEditfeed(holder.change.getText().toString().trim());
+        //  mref.push().child(String.valueOf(position) + "Card").setValue(valuenew);
+
+
 
     }
 
