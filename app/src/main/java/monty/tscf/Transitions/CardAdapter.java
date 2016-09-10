@@ -20,9 +20,18 @@ import monty.tscf.R;
  */
 public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
 
-    String[] ques = {" Rate the Staff", "How well was the Study Material", "How were the exercises", "How did you find" +
-            "the tests", "How well were the concepts taught", "Give rating to the Utilities Provider",
-            "Overall rating for the Teachers"};
+    String[] ques = {"How would you grade the Teachers",
+            "How Did You Find The Study Material",
+            "How Was The Coaching Infrastructure",
+            "How Innovative Were The Teachers",
+            "Ease Of Travel To The Class",
+            "Previous Years' Results",
+            "Extra-Curricular Activities",
+            "Counselling During Admission",
+            "Clear Your Doubts Sessions",
+            "How Were The Tests Conducted",
+            "How Were The Seminars",
+            "How Were The Powerpoint Presentations"};
 
     Context context;
     LayoutInflater inflater;

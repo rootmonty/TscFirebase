@@ -13,8 +13,8 @@ import monty.tscf.R;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
-    String[] name = {"Teacher1", "Teacher2", "Teacher3", "Teacher4",
-            "Teacher5", "Teacher6", "Teacher7", "Hmk", "Jt", "Jr"};
+    String[] name = {"YOGITHA ", " NEHA APTE ", "NEHA LAD", "RUCHI",
+            "NEELAM", "BHUMIKA"};
     // RatingBar ratingBar;
     Context context;
     LayoutInflater inflater;

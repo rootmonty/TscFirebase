@@ -72,9 +72,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/bg_red"
+                android:contextClickable="false"
+                android:ellipsize="middle"
                 android:focusableInTouchMode="true"
                 android:padding="5dp"
-                android:shadowColor="@color/standardwhite"
                 android:text="1"
                 android:textAlignment="center" />
 

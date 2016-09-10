@@ -6,8 +6,17 @@ package monty.tscf.Transitions;
 public class FirePOJO {
 
     //int rating;
+    String Question;
     String rating;
     String editfeed;
+
+    public String getQuestion() {
+        return Question;
+    }
+
+    public void setQuestion(String ques) {
+        this.Question = ques;
+    }
 
     public String getRating() {
         return rating;
