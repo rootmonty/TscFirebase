@@ -31,7 +31,12 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
             "Clear Your Doubts Sessions",
             "How Were The Tests Conducted",
             "How Were The Seminars",
-            "How Were The Powerpoint Presentations"};
+            "How Were The Powerpoint Presentations",
+            "Quality of tests in regular time intervals",
+            "Syllabus coverage in tests",
+    "Test results/feedback on time",
+    "Doubt clearance after tests",
+    "Remedial classes after tests"};
 
     Context context;
     LayoutInflater inflater;

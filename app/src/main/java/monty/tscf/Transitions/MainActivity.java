@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     //private TabsPagerAdapter mAdapter;
     //private ActionBar actionBar;
     // Tab titles
-    private String[] tabs = {"Generic Info", "Select Teacher", "GET Tscore"};
+    //private String[] tabs = {"Generic Info", "Select Teacher", "GET Tscore"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,9 +93,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new TopRatedFragment(), "Generic Info");
-        adapter.addFragment(new GamesFragment(), "Get Teacher");
-        adapter.addFragment(new MoviesFragment(), "Get Tscore");
+        adapter.addFragment(new TopRatedFragment(), "GENERAL");
+        adapter.addFragment(new GamesFragment(), "STAFF");
+        adapter.addFragment(new TeacherFragment(), "Teachers");
+        adapter.addFragment(new MoviesFragment(), "TSCORE");
         viewPager.setAdapter(adapter);
     }
     /*

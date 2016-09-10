@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">TscF</string>
+    <!--  contains layout featuring strings only -->
         <string name="action_sign_in_short">Register</string>
         <string name="signup">signup</string>
         <string name="email">Email</string>
@@ -29,4 +30,43 @@
         <string name="btn_sign_out">Sign Out</string>
         <string name="lbl_forgot_password">Forgot password?</string>
         <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
-    </resources>
+    <!-- New Strings to be used as questions in the layout of teacher questionnaire -->
+    <string name="m1">Yogitha Maam(Gorai)</string>
+    <string name="m2">Neha Apte </string>
+    <string name="m3">Neha Lad</string>
+    <string name="m4">Ruchi </string>
+    <string name="m5">Neelam</string>
+    <string name="m6">Bhumika</string>
+    <!-- contains the questions to be asked to the teacher staff guys -->
+    <string name="q1">Syllabus Covered</string>
+    <string name="q2">Punctuality </string>
+    <string name="q3">Subject Knowledge</string>
+    <string name="q4">Teaching Methods</string>
+    <string name="q5">Doubt Discussion</string>
+    <string name="q6">Connectivity</string>
+    <string name="q7">Punctual nature</string>
+    <string name="q8">Problem Solving</string>
+    <string name="q9">Helpfulness</string>
+    <string name="q10">Behaviour</string>
+
+    <!-- contains information about the teachers name -->
+    <string name="t1"> Hitesh Vakharia </string>
+    <string name="t2">Kekul Vakharia </string>
+    <string name="t3">Janki Barodia(French)</string>
+    <string name="t4">Kanika Maheshwari(French)</string>
+    <string name="t5">Priti Vora(Maths)</string>
+    <string name="t6">Sonal Jain (Maths)</string>
+    <string name="t7">Manoj Mishra (History)</string>
+    <string name="t8"> Juliet Sequeira (Social Science)</string>
+    <string name="t9">Vandana Nagar(English/History)</string>
+    <string name="t10">Aarti Ganatra(English/Social Sciences)</string>
+    <string name="t11">Tushar Bhatt(English Grammar)</string>
+    <string name="t12">Pravin Parab (Sanskrit/Marathi)</string>
+    <string name="t13">Shashi Singh(Hindi)</string>
+    <string name="t14">Sejal Bhave(Hindi/Marathi)</string>
+    <string name="t15">Shabina Sayyad(Science)</string>
+    <string name="t16">Ruddhi Salvi (Science)</string>
+    <string name="t17">Harshil Jariwala(Science)</string>
+</resources>
+
+

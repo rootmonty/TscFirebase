@@ -31,9 +31,9 @@ public class CardViewholder extends RecyclerView.ViewHolder {
     // RadioButton radioButton;
     Button feed;
     Firebase mref;
-    FireObject obj;
+    // FireObject obj;
     FirePOJO value = new FirePOJO();
-    int id;
+    //int id;
 
     public CardViewholder(final View itemView) {
         super(itemView);
