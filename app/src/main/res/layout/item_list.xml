@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="330dp"
     android:layout_gravity="center_horizontal"
     android:layout_marginBottom="8dp"
     android:layout_marginLeft="16dp"
@@ -26,7 +26,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_below="@+id/list_title"
-            android:background="@drawable/teacher"
+            android:background="@drawable/ic_launcher"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -55,5 +55,176 @@
             android:textColor="#000000"
             android:textSize="14sp" />
     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/invisiblelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/staffq1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="15dp"
+                android:text="@string/q7" />
+
+            <Button
+                android:id="@+id/stb01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/stb02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/stb03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/stb04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/stb05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/staffq2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="15dp"
+                android:text="@string/q8" />
+
+            <Button
+                android:id="@+id/stb11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/stb12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/stb13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/stb14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/stb15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/staffq3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="15dp"
+                android:text="@string/q9" />
+
+            <Button
+                android:id="@+id/stb21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/stb22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/stb23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/stb24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/stb25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/standardwhite"
+                android:text="5" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </android.support.v7.widget.CardView>

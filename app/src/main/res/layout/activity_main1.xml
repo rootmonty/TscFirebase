@@ -6,13 +6,15 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:layout_height="wrap_content">
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scrollIndicators="left|right"
+            android:touchscreenBlocksFocus="true"
+            android:transitionGroup="true"
             app:tabGravity="fill"
             app:tabMode="fixed"
             app:tabTextColor="#fff" />

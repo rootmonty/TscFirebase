@@ -55,13 +55,13 @@ public class CardViewholder extends RecyclerView.ViewHolder {
         feed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mref = new Firebase("https://tscf-b4925.firebaseio.com/database/");
+                mref = new Firebase("https://tscf-b4925.firebaseio.com/GENERIC/");
                 // value.setRating(Math.round(ratingBar.getRating()));
                 // value.setRating(radioButton.getText().toString());
                 value.setQuestion(ques.getText().toString());
                 value.setEditfeed(String.valueOf(change.getText().toString().trim()));
                 //obj.addValue(value);
-                mref.push().child("New Database").setValue(value);
+                mref.child("generalinfo").push().setValue(value);
                 // ratingBar.setRating(0);
                 changes.setVisibility(View.INVISIBLE);
                 change.setVisibility(View.INVISIBLE);

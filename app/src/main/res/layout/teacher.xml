@@ -18,6 +18,8 @@
             android:layout_height="35dp"
             android:layout_gravity="center_horizontal"
             android:text="Teachers name"
+            android:textColor="@color/standardblack"
+            android:textSize="50px"
             android:textStyle="bold" />
 
         <LinearLayout

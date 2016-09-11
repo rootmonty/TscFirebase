@@ -32,6 +32,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
     };
 
     public RecyclerAdapter(Context context) {
+
+        Toast.makeText(context, "Under STAFF TAB,Tap on Image to make the Layout Visible " +
+                "and Tap on feedback button to submit the response.The message will now" +
+                "vanish", Toast.LENGTH_LONG).show();
         this.context = context;
         inflater = LayoutInflater.from(context);
     }
@@ -47,11 +51,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
 
-        holder.tv1.setText(name[position]);
-        holder.tv2.setOnClickListener(clickListener);
-        holder.tv2.setTag(holder);
-        holder.imageView.setOnClickListener(clickListener);
-        holder.imageView.setTag(holder);
+        holder.staff.setText(name[position]);
+        // holder.tv2.setOnClickListener(clickListener);
+        // holder.tv2.setTag(holder);
+        // holder.imageView.setOnClickListener(clickListener);
+        // holder.imageView.setTag(holder);
 
     }
 

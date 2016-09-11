@@ -528,6 +528,7 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
                 value.setElaborateans(ElaborateAns.getText().toString());
                 value.setTeachername(TeacherName.getText().toString());
                 mref.push().child("Teacher feedback").setValue(value);
+                Toast.makeText(view.getContext(), "Your Teacher Submission is Done", Toast.LENGTH_LONG).show();
             }
         };
         submit.setOnClickListener(submission);
