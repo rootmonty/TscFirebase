@@ -14,7 +14,8 @@ import monty.tscf.R;
 public class TeacherAdapter extends RecyclerView.Adapter<TeacherViewHolder> {
 
     String[] teachers = {"Hitesh Vakharia",
-            "Kekul Vakharia", "Janki Barodia(French)",
+            "Kekul Vakharia",
+            "Janki Barodia(French)",
             " Kanika Maheshwari(French) ",
             "  Priti Vora(Maths) ",
             "  Sonal Jain (Maths) ",
