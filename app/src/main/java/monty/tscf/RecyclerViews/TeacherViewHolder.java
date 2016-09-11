@@ -1,6 +1,5 @@
-package monty.tscf.Transitions;
+package monty.tscf.RecyclerViews;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,6 +11,7 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 
 import monty.tscf.R;
+import monty.tscf.POJO.Teacher;
 
 public class TeacherViewHolder extends RecyclerView.ViewHolder {
 

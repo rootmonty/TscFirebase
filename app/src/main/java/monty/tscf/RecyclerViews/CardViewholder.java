@@ -1,19 +1,17 @@
-package monty.tscf.Transitions;
+package monty.tscf.RecyclerViews;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 
 import monty.tscf.R;
+import monty.tscf.POJO.FirePOJO;
 
 /**
  * Created by monty on 4/9/16.

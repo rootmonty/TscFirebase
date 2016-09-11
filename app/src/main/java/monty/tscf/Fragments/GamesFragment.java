@@ -1,4 +1,4 @@
-package monty.tscf.Transitions;
+package monty.tscf.Fragments;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -6,10 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.RatingBar;
 
 import monty.tscf.R;
+import monty.tscf.RecyclerViews.RecyclerAdapter;
 
 public class GamesFragment extends android.support.v4.app.Fragment {
 

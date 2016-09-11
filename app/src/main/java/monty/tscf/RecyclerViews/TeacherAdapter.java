@@ -1,4 +1,4 @@
-package monty.tscf.Transitions;
+package monty.tscf.RecyclerViews;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

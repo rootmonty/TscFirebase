@@ -1,4 +1,4 @@
-package monty.tscf.Transitions;
+package monty.tscf.POJO;
 
 /**
  * Created by monty on 10/9/16.

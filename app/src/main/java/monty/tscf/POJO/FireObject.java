@@ -1,4 +1,4 @@
-package monty.tscf.Transitions;
+package monty.tscf.POJO;
 
 import java.util.List;
 
