@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new TopRatedFragment(), "GENERAL");
         adapter.addFragment(new GamesFragment(), "STAFF");
         adapter.addFragment(new TeacherFragment(), "Teachers");
-        adapter.addFragment(new MoviesFragment(), "TSCORE");
+        //adapter.addFragment(new MoviesFragment(), "TSCORE");
         viewPager.setAdapter(adapter);
     }
     /*

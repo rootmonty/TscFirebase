@@ -32,9 +32,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     public RecyclerAdapter(Context context) {
 
-        Toast.makeText(context, "Under STAFF TAB,Tap on Image to make the Layout Visible " +
-                "and Tap on feedback button to submit the response.The message will now" +
-                "vanish", Toast.LENGTH_LONG).show();
         this.context = context;
         inflater = LayoutInflater.from(context);
     }

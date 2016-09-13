@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import monty.tscf.FinalTScore;
+
 import monty.tscf.R;
 import monty.tscf.RecyclerViews.CardAdapter;
 
@@ -31,7 +31,7 @@ public class TopRatedFragment extends Fragment {
         recyclerView2.setHasFixedSize(true);
         recyclerView2.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        button2 = (Button) rootView.findViewById(R.id.button);
+        // button2 = (Button) rootView.findViewById(R.id.button);
        /*
        //OLD CODE Till the use of static layout inflation
        //NEW CODE LIES ABOVE

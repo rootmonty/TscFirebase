@@ -80,11 +80,22 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.stb01:
+                        if (b04.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
                         b02.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b01.setTextColor(Color.BLUE);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b01.setBackgroundResource(R.drawable.fill);
                         b01.setFocusableInTouchMode(true);
                         // tv1.setBackgroundColor(Color.BLUE);
                         value.setA1(b01.getText().toString());
@@ -93,44 +104,83 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.stb02:
+                        if (b01.getBackground() != null || b04.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                      /*
                         b01.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b02.setTextColor(Color.BLUE);
+                        */
+                        b02.setBackgroundResource(R.drawable.fill);
+
+                        // b02.setTextColor(Color.BLUE);
                         b02.setFocusableInTouchMode(true);
                         //  tv2.setBackgroundColor(Color.BLUE);
                         value.setA1(b02.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.stb03:
-                        b01.setTextColor(Color.BLACK);
+                        if (b01.getBackground() != null || b02.getBackground() != null || b04.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /* b01.setTextColor(Color.BLACK);
                         b02.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b03.setTextColor(Color.BLUE);
+                        */
+                        // b03.setTextColor(Color.BLUE);
+                        b03.setBackgroundResource(R.drawable.fill);
                         b03.setFocusableInTouchMode(true);
                         // tv3.setBackgroundColor(Color.BLUE);
                         value.setA1(b03.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.stb04:
-                        b01.setTextColor(Color.BLACK);
+                        if (b01.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /* b01.setTextColor(Color.BLACK);
                         b02.setTextColor(Color.BLACK);
                         b03.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b04.setTextColor(Color.BLUE);
+                        */
+
+                        b04.setBackgroundResource(R.drawable.fill);
+                        // b04.setTextColor(Color.BLUE);
                         b04.setFocusableInTouchMode(true);
                         // tv4.setBackgroundColor(Color.BLUE);
                         value.setA1(b04.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.stb05:
-                        b01.setTextColor(Color.BLACK);
+                        if (b01.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b04.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /* b01.setTextColor(Color.BLACK);
                         b02.setTextColor(Color.BLACK);
                         b03.setTextColor(Color.BLACK);
-                        b04.setTextColor(Color.BLACK);
-                        b05.setTextColor(Color.BLUE);
+                        b04.setTextColor(Color.BLACK); */
+                        b05.setBackgroundResource(R.drawable.fill);
+                        // b05.setTextColor(Color.BLUE);
                         b05.setFocusableInTouchMode(true);
                         // tv5.setBackgroundColor(Color.BLUE);
                         value.setA1(b05.getText().toString());

@@ -81,7 +81,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/standardwhite"
+                android:background="@drawable/bg_red"
                 android:text="1" />
 
             <Button
@@ -89,7 +89,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/standardwhite"
+                android:background="@drawable/bg_red"
                 android:text="2" />
 
             <Button
@@ -97,7 +97,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/standardwhite"
+                android:background="@drawable/bg_red"
                 android:text="3" />
 
             <Button
@@ -105,7 +105,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/standardwhite"
+                android:background="@drawable/bg_red"
                 android:text="4" />
 
             <Button
@@ -113,7 +113,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/standardwhite"
+                android:background="@drawable/bg_red"
                 android:text="5" />
         </LinearLayout>
 

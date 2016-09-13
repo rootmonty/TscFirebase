@@ -20,9 +20,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 // Games fragment activity
                 return new GamesFragment();
-            case 2:
+            //// case 2:
                 // Movies fragment activity
-                return new MoviesFragment();
+            // return new MoviesFragment();
         }
 
         return null;
