@@ -82,12 +82,22 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b1:
+                        if (b04.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
                         b02.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b01.setTextColor(Color.BLUE);
-                        b01.setFocusableInTouchMode(true);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b01.setBackgroundResource(R.drawable.fill);
                         // tv1.setBackgroundColor(Color.BLUE);
                         value.setAns1(b01.getText().toString());
 
@@ -95,46 +105,83 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b2:
-                        b01.setTextColor(Color.BLACK);
+                        if (b04.getBackground() != null || b01.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b02.setTextColor(Color.BLUE);
-                        b02.setFocusableInTouchMode(true);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b02.setBackgroundResource(R.drawable.fill);
                         //  tv2.setBackgroundColor(Color.BLUE);
                         value.setAns1(b02.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b3:
-                        b01.setTextColor(Color.BLACK);
+                        if (b04.getBackground() != null || b02.getBackground() != null || b01.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
                         b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b03.setTextColor(Color.BLUE);
-                        b03.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b03.setBackgroundResource(R.drawable.fill);
                         value.setAns1(b03.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b4:
-                        b01.setTextColor(Color.BLACK);
+                        if (b01.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b05.getBackground() != null) {
+                            b01.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b05.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
                         b02.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
                         b05.setTextColor(Color.BLACK);
-                        b04.setTextColor(Color.BLUE);
-                        b04.setFocusableInTouchMode(true);
-                        // tv4.setBackgroundColor(Color.BLUE);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b04.setBackgroundResource(R.drawable.fill);
                         value.setAns1(b04.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b5:
-                        b01.setTextColor(Color.BLACK);
+                        if (b04.getBackground() != null || b02.getBackground() != null || b03.getBackground() != null
+                                || b01.getBackground() != null) {
+                            b04.setBackgroundResource(R.color.standardwhite);
+                            b02.setBackgroundResource(R.color.standardwhite);
+                            b03.setBackgroundResource(R.color.standardwhite);
+                            b01.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
                         b02.setTextColor(Color.BLACK);
+
                         b03.setTextColor(Color.BLACK);
                         b04.setTextColor(Color.BLACK);
-                        b05.setTextColor(Color.BLUE);
-                        b05.setFocusableInTouchMode(true);
-                        // tv5.setBackgroundColor(Color.BLUE);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b05.setBackgroundResource(R.drawable.fill);
                         value.setAns1(b05.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
                         break;
@@ -150,59 +197,104 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b11:
-                        b12.setTextColor(Color.BLACK);
-                        b13.setTextColor(Color.BLACK);
-                        b14.setTextColor(Color.BLACK);
-                        b15.setTextColor(Color.BLACK);
-                        b11.setTextColor(Color.BLUE);
-                        b11.setFocusableInTouchMode(true);
-                        // tv1.setBackgroundColor(Color.BLUE);
+                        if (b14.getBackground() != null || b12.getBackground() != null || b13.getBackground() != null
+                                || b15.getBackground() != null) {
+                            b14.setBackgroundResource(R.color.standardwhite);
+                            b12.setBackgroundResource(R.color.standardwhite);
+                            b13.setBackgroundResource(R.color.standardwhite);
+                            b15.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b11.setBackgroundResource(R.drawable.fill);
                         value.setAns2(b11.getText().toString());
 
                         // b1.setBackgroundColor(Color.BLUE);
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b12:
-                        b11.setTextColor(Color.BLACK);
-                        b13.setTextColor(Color.BLACK);
-                        b14.setTextColor(Color.BLACK);
-                        b15.setTextColor(Color.BLACK);
-                        b12.setTextColor(Color.BLUE);
-                        b12.setFocusableInTouchMode(true);
-                        //  tv2.setBackgroundColor(Color.BLUE);
+                        if (b14.getBackground() != null || b11.getBackground() != null || b13.getBackground() != null
+                                || b15.getBackground() != null) {
+                            b14.setBackgroundResource(R.color.standardwhite);
+                            b11.setBackgroundResource(R.color.standardwhite);
+                            b13.setBackgroundResource(R.color.standardwhite);
+                            b15.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b12.setBackgroundResource(R.drawable.fill);
                         value.setAns2(b12.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b13:
-                        b11.setTextColor(Color.BLACK);
-                        b12.setTextColor(Color.BLACK);
-                        b14.setTextColor(Color.BLACK);
-                        b15.setTextColor(Color.BLACK);
-                        b13.setTextColor(Color.BLUE);
-                        b13.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        if (b14.getBackground() != null || b12.getBackground() != null || b11.getBackground() != null
+                                || b15.getBackground() != null) {
+                            b14.setBackgroundResource(R.color.standardwhite);
+                            b12.setBackgroundResource(R.color.standardwhite);
+                            b11.setBackgroundResource(R.color.standardwhite);
+                            b15.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b13.setBackgroundResource(R.drawable.fill);
                         value.setAns2(b13.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b14:
-                        b11.setTextColor(Color.BLACK);
-                        b12.setTextColor(Color.BLACK);
-                        b13.setTextColor(Color.BLACK);
-                        b15.setTextColor(Color.BLACK);
-                        b14.setTextColor(Color.BLUE);
-                        b14.setFocusableInTouchMode(true);
-                        // tv4.setBackgroundColor(Color.BLUE);
+                        if (b11.getBackground() != null || b12.getBackground() != null || b13.getBackground() != null
+                                || b15.getBackground() != null) {
+                            b11.setBackgroundResource(R.color.standardwhite);
+                            b12.setBackgroundResource(R.color.standardwhite);
+                            b13.setBackgroundResource(R.color.standardwhite);
+                            b15.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b14.setBackgroundResource(R.drawable.fill);
                         value.setAns2(b14.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b15:
-                        b11.setTextColor(Color.BLACK);
-                        b12.setTextColor(Color.BLACK);
-                        b13.setTextColor(Color.BLACK);
-                        b14.setTextColor(Color.BLACK);
-                        b15.setTextColor(Color.BLUE);
-                        b15.setFocusableInTouchMode(true);
-                        // tv5.setBackgroundColor(Color.BLUE);
+                        if (b14.getBackground() != null || b12.getBackground() != null || b13.getBackground() != null
+                                || b11.getBackground() != null) {
+                            b14.setBackgroundResource(R.color.standardwhite);
+                            b12.setBackgroundResource(R.color.standardwhite);
+                            b13.setBackgroundResource(R.color.standardwhite);
+                            b11.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b15.setBackgroundResource(R.drawable.fill);
                         value.setAns2(b15.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
                         break;
@@ -219,59 +311,104 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b21:
-                        b22.setTextColor(Color.BLACK);
-                        b23.setTextColor(Color.BLACK);
-                        b24.setTextColor(Color.BLACK);
-                        b25.setTextColor(Color.BLACK);
-                        b21.setTextColor(Color.BLUE);
-                        b21.setFocusableInTouchMode(true);
-                        // tv1.setBackgroundColor(Color.BLUE);
-                        value.setAns3(b01.getText().toString());
+                        if (b24.getBackground() != null || b22.getBackground() != null || b23.getBackground() != null
+                                || b25.getBackground() != null) {
+                            b24.setBackgroundResource(R.color.standardwhite);
+                            b22.setBackgroundResource(R.color.standardwhite);
+                            b23.setBackgroundResource(R.color.standardwhite);
+                            b25.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b21.setBackgroundResource(R.drawable.fill);
+                        value.setAns3(b21.getText().toString());
 
                         // b1.setBackgroundColor(Color.BLUE);
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b22:
-                        b21.setTextColor(Color.BLACK);
-                        b23.setTextColor(Color.BLACK);
-                        b24.setTextColor(Color.BLACK);
-                        b25.setTextColor(Color.BLACK);
-                        b22.setTextColor(Color.BLUE);
-                        b22.setFocusableInTouchMode(true);
-                        //  tv2.setBackgroundColor(Color.BLUE);
+                        if (b24.getBackground() != null || b24.getBackground() != null || b23.getBackground() != null
+                                || b25.getBackground() != null) {
+                            b24.setBackgroundResource(R.color.standardwhite);
+                            b21.setBackgroundResource(R.color.standardwhite);
+                            b23.setBackgroundResource(R.color.standardwhite);
+                            b25.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b22.setBackgroundResource(R.drawable.fill);
                         value.setAns3(b22.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b23:
-                        b21.setTextColor(Color.BLACK);
-                        b22.setTextColor(Color.BLACK);
-                        b24.setTextColor(Color.BLACK);
-                        b25.setTextColor(Color.BLACK);
-                        b23.setTextColor(Color.BLUE);
-                        b23.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        if (b24.getBackground() != null || b22.getBackground() != null || b21.getBackground() != null
+                                || b25.getBackground() != null) {
+                            b24.setBackgroundResource(R.color.standardwhite);
+                            b22.setBackgroundResource(R.color.standardwhite);
+                            b21.setBackgroundResource(R.color.standardwhite);
+                            b25.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b23.setBackgroundResource(R.drawable.fill);
                         value.setAns3(b23.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b24:
-                        b21.setTextColor(Color.BLACK);
-                        b22.setTextColor(Color.BLACK);
-                        b23.setTextColor(Color.BLACK);
-                        b25.setTextColor(Color.BLACK);
-                        b24.setTextColor(Color.BLUE);
-                        b24.setFocusableInTouchMode(true);
-                        // tv4.setBackgroundColor(Color.BLUE);
+                        if (b21.getBackground() != null || b22.getBackground() != null || b23.getBackground() != null
+                                || b25.getBackground() != null) {
+                            b21.setBackgroundResource(R.color.standardwhite);
+                            b22.setBackgroundResource(R.color.standardwhite);
+                            b23.setBackgroundResource(R.color.standardwhite);
+                            b25.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b24.setBackgroundResource(R.drawable.fill);
                         value.setAns3(b24.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b25:
-                        b21.setTextColor(Color.BLACK);
-                        b22.setTextColor(Color.BLACK);
-                        b23.setTextColor(Color.BLACK);
-                        b24.setTextColor(Color.BLACK);
-                        b25.setTextColor(Color.BLUE);
-                        b25.setFocusableInTouchMode(true);
-                        // tv5.setBackgroundColor(Color.BLUE);
+                        if (b24.getBackground() != null || b22.getBackground() != null || b23.getBackground() != null
+                                || b21.getBackground() != null) {
+                            b24.setBackgroundResource(R.color.standardwhite);
+                            b22.setBackgroundResource(R.color.standardwhite);
+                            b23.setBackgroundResource(R.color.standardwhite);
+                            b21.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b25.setBackgroundResource(R.drawable.fill);
                         value.setAns3(b25.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
                         break;
@@ -288,59 +425,104 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b41:
-                        b42.setTextColor(Color.BLACK);
-                        b43.setTextColor(Color.BLACK);
-                        b44.setTextColor(Color.BLACK);
-                        b45.setTextColor(Color.BLACK);
-                        b41.setTextColor(Color.BLUE);
-                        b41.setFocusableInTouchMode(true);
-                        // tv1.setBackgroundColor(Color.BLUE);
+                        if (b44.getBackground() != null || b42.getBackground() != null || b43.getBackground() != null
+                                || b45.getBackground() != null) {
+                            b44.setBackgroundResource(R.color.standardwhite);
+                            b42.setBackgroundResource(R.color.standardwhite);
+                            b43.setBackgroundResource(R.color.standardwhite);
+                            b45.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b41.setBackgroundResource(R.drawable.fill);
                         value.setAns5(b41.getText().toString());
 
                         // b1.setBackgroundColor(Color.BLUE);
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b42:
-                        b41.setTextColor(Color.BLACK);
-                        b43.setTextColor(Color.BLACK);
-                        b44.setTextColor(Color.BLACK);
-                        b45.setTextColor(Color.BLACK);
-                        b42.setTextColor(Color.BLUE);
-                        b42.setFocusableInTouchMode(true);
-                        //  tv2.setBackgroundColor(Color.BLUE);
+                        if (b44.getBackground() != null || b41.getBackground() != null || b43.getBackground() != null
+                                || b45.getBackground() != null) {
+                            b44.setBackgroundResource(R.color.standardwhite);
+                            b41.setBackgroundResource(R.color.standardwhite);
+                            b43.setBackgroundResource(R.color.standardwhite);
+                            b45.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b42.setBackgroundResource(R.drawable.fill);
                         value.setAns5(b42.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b43:
-                        b41.setTextColor(Color.BLACK);
-                        b42.setTextColor(Color.BLACK);
-                        b44.setTextColor(Color.BLACK);
-                        b45.setTextColor(Color.BLACK);
-                        b43.setTextColor(Color.BLUE);
-                        b43.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        if (b44.getBackground() != null || b42.getBackground() != null || b41.getBackground() != null
+                                || b45.getBackground() != null) {
+                            b44.setBackgroundResource(R.color.standardwhite);
+                            b42.setBackgroundResource(R.color.standardwhite);
+                            b41.setBackgroundResource(R.color.standardwhite);
+                            b45.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b43.setBackgroundResource(R.drawable.fill);
                         value.setAns5(b43.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b44:
-                        b41.setTextColor(Color.BLACK);
-                        b42.setTextColor(Color.BLACK);
-                        b43.setTextColor(Color.BLACK);
-                        b45.setTextColor(Color.BLACK);
-                        b44.setTextColor(Color.BLUE);
-                        b44.setFocusableInTouchMode(true);
-                        // tv4.setBackgroundColor(Color.BLUE);
+                        if (b41.getBackground() != null || b42.getBackground() != null || b43.getBackground() != null
+                                || b45.getBackground() != null) {
+                            b41.setBackgroundResource(R.color.standardwhite);
+                            b42.setBackgroundResource(R.color.standardwhite);
+                            b43.setBackgroundResource(R.color.standardwhite);
+                            b45.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b44.setBackgroundResource(R.drawable.fill);
                         value.setAns5(b44.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b45:
-                        b41.setTextColor(Color.BLACK);
-                        b42.setTextColor(Color.BLACK);
-                        b43.setTextColor(Color.BLACK);
-                        b44.setTextColor(Color.BLACK);
-                        b45.setTextColor(Color.BLUE);
-                        b45.setFocusableInTouchMode(true);
-                        // tv5.setBackgroundColor(Color.BLUE);
+                        if (b44.getBackground() != null || b42.getBackground() != null || b43.getBackground() != null
+                                || b41.getBackground() != null) {
+                            b44.setBackgroundResource(R.color.standardwhite);
+                            b42.setBackgroundResource(R.color.standardwhite);
+                            b43.setBackgroundResource(R.color.standardwhite);
+                            b41.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b45.setBackgroundResource(R.drawable.fill);
                         value.setAns5(b45.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
                         break;
@@ -357,59 +539,104 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b51:
-                        b52.setTextColor(Color.BLACK);
-                        b53.setTextColor(Color.BLACK);
-                        b54.setTextColor(Color.BLACK);
-                        b55.setTextColor(Color.BLACK);
-                        b51.setTextColor(Color.BLUE);
-                        b51.setFocusableInTouchMode(true);
-                        // tv1.setBackgroundColor(Color.BLUE);
+                        if (b54.getBackground() != null || b52.getBackground() != null || b53.getBackground() != null
+                                || b55.getBackground() != null) {
+                            b54.setBackgroundResource(R.color.standardwhite);
+                            b52.setBackgroundResource(R.color.standardwhite);
+                            b53.setBackgroundResource(R.color.standardwhite);
+                            b55.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b51.setBackgroundResource(R.drawable.fill);
                         value.setAns6(b51.getText().toString());
 
                         // b1.setBackgroundColor(Color.BLUE);
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b52:
-                        b51.setTextColor(Color.BLACK);
-                        b53.setTextColor(Color.BLACK);
-                        b54.setTextColor(Color.BLACK);
-                        b55.setTextColor(Color.BLACK);
-                        b52.setTextColor(Color.BLUE);
-                        b52.setFocusableInTouchMode(true);
-                        //  tv2.setBackgroundColor(Color.BLUE);
+                        if (b54.getBackground() != null || b51.getBackground() != null || b53.getBackground() != null
+                                || b55.getBackground() != null) {
+                            b54.setBackgroundResource(R.color.standardwhite);
+                            b51.setBackgroundResource(R.color.standardwhite);
+                            b53.setBackgroundResource(R.color.standardwhite);
+                            b55.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b52.setBackgroundResource(R.drawable.fill);
                         value.setAns6(b52.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b53:
-                        b51.setTextColor(Color.BLACK);
-                        b52.setTextColor(Color.BLACK);
-                        b54.setTextColor(Color.BLACK);
-                        b55.setTextColor(Color.BLACK);
-                        b53.setTextColor(Color.BLUE);
-                        b53.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        if (b54.getBackground() != null || b52.getBackground() != null || b51.getBackground() != null
+                                || b55.getBackground() != null) {
+                            b54.setBackgroundResource(R.color.standardwhite);
+                            b52.setBackgroundResource(R.color.standardwhite);
+                            b51.setBackgroundResource(R.color.standardwhite);
+                            b55.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b53.setBackgroundResource(R.drawable.fill);
                         value.setAns6(b53.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b54:
-                        b51.setTextColor(Color.BLACK);
-                        b52.setTextColor(Color.BLACK);
-                        b53.setTextColor(Color.BLACK);
-                        b55.setTextColor(Color.BLACK);
-                        b54.setTextColor(Color.BLUE);
-                        b54.setFocusableInTouchMode(true);
-                        // tv4.setBackgroundColor(Color.BLUE);
+                        if (b51.getBackground() != null || b52.getBackground() != null || b53.getBackground() != null
+                                || b55.getBackground() != null) {
+                            b51.setBackgroundResource(R.color.standardwhite);
+                            b52.setBackgroundResource(R.color.standardwhite);
+                            b53.setBackgroundResource(R.color.standardwhite);
+                            b55.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b54.setBackgroundResource(R.drawable.fill);
                         value.setAns6(b54.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b55:
-                        b51.setTextColor(Color.BLACK);
-                        b52.setTextColor(Color.BLACK);
-                        b53.setTextColor(Color.BLACK);
-                        b54.setTextColor(Color.BLACK);
-                        b55.setTextColor(Color.BLUE);
-                        b55.setFocusableInTouchMode(true);
-                        // tv5.setBackgroundColor(Color.BLUE);
+                        if (b54.getBackground() != null || b52.getBackground() != null || b53.getBackground() != null
+                                || b54.getBackground() != null) {
+                            b54.setBackgroundResource(R.color.standardwhite);
+                            b52.setBackgroundResource(R.color.standardwhite);
+                            b53.setBackgroundResource(R.color.standardwhite);
+                            b55.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b55.setBackgroundResource(R.drawable.fill);
                         value.setAns6(b55.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
                         break;
@@ -426,58 +653,105 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.b31:
-                        b32.setTextColor(Color.BLACK);
-                        b33.setTextColor(Color.BLACK);
-                        b34.setTextColor(Color.BLACK);
-                        b35.setTextColor(Color.BLACK);
-                        b31.setTextColor(Color.BLUE);
-                        b31.setFocusableInTouchMode(true);
-                        // tv1.setBackgroundColor(Color.BLUE);
+                        if (b34.getBackground() != null || b32.getBackground() != null || b33.getBackground() != null
+                                || b35.getBackground() != null) {
+                            b34.setBackgroundResource(R.color.standardwhite);
+                            b32.setBackgroundResource(R.color.standardwhite);
+                            b33.setBackgroundResource(R.color.standardwhite);
+                            b35.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b31.setBackgroundResource(R.drawable.fill);
                         value.setAns4(b31.getText().toString());
 
                         // b1.setBackgroundColor(Color.BLUE);
                         // b1.setCursorVisible(true);
                         break;
                     case R.id.b32:
-                        b31.setTextColor(Color.BLACK);
-                        b33.setTextColor(Color.BLACK);
-                        b34.setTextColor(Color.BLACK);
-                        b35.setTextColor(Color.BLACK);
-                        b32.setTextColor(Color.BLUE);
-                        b32.setFocusableInTouchMode(true);
-                        //  tv2.setBackgroundColor(Color.BLUE);
+                        if (b34.getBackground() != null || b31.getBackground() != null || b33.getBackground() != null
+                                || b35.getBackground() != null) {
+                            b34.setBackgroundResource(R.color.standardwhite);
+                            b31.setBackgroundResource(R.color.standardwhite);
+                            b33.setBackgroundResource(R.color.standardwhite);
+                            b35.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b32.setBackgroundResource(R.drawable.fill);
                         value.setAns4(b32.getText().toString());
                         // b2.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b33:
-                        b31.setTextColor(Color.BLACK);
-                        b32.setTextColor(Color.BLACK);
-                        b34.setTextColor(Color.BLACK);
-                        b35.setTextColor(Color.BLACK);
-                        b33.setTextColor(Color.BLUE);
-                        b33.setFocusableInTouchMode(true);
-                        // tv3.setBackgroundColor(Color.BLUE);
+                        if (b34.getBackground() != null || b32.getBackground() != null || b31.getBackground() != null
+                                || b35.getBackground() != null) {
+                            b34.setBackgroundResource(R.color.standardwhite);
+                            b32.setBackgroundResource(R.color.standardwhite);
+                            b31.setBackgroundResource(R.color.standardwhite);
+                            b35.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b33.setBackgroundResource(R.drawable.fill);
                         value.setAns4(b33.getText().toString());
                         // b3.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b34:
-                        b31.setTextColor(Color.BLACK);
-                        b32.setTextColor(Color.BLACK);
-                        b33.setTextColor(Color.BLACK);
-                        b35.setTextColor(Color.BLACK);
-                        b34.setTextColor(Color.BLUE);
-                        b34.setFocusableInTouchMode(true);
+                        if (b33.getBackground() != null || b32.getBackground() != null || b31.getBackground() != null
+                                || b35.getBackground() != null) {
+                            b33.setBackgroundResource(R.color.standardwhite);
+                            b32.setBackgroundResource(R.color.standardwhite);
+                            b31.setBackgroundResource(R.color.standardwhite);
+                            b35.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b34.setBackgroundResource(R.drawable.fill);
                         // tv4.setBackgroundColor(Color.BLUE);
                         value.setAns4(b34.getText().toString());
                         // b4.setBackgroundColor(Color.BLUE);
                         break;
                     case R.id.b35:
-                        b31.setTextColor(Color.BLACK);
-                        b32.setTextColor(Color.BLACK);
-                        b33.setTextColor(Color.BLACK);
-                        b34.setTextColor(Color.BLACK);
-                        b35.setTextColor(Color.BLUE);
-                        b35.setFocusableInTouchMode(true);
+                        if (b34.getBackground() != null || b32.getBackground() != null || b33.getBackground() != null
+                                || b31.getBackground() != null) {
+                            b34.setBackgroundResource(R.color.standardwhite);
+                            b32.setBackgroundResource(R.color.standardwhite);
+                            b33.setBackgroundResource(R.color.standardwhite);
+                            b31.setBackgroundResource(R.color.standardwhite);
+                        }
+                       /*
+                        b02.setTextColor(Color.BLACK);
+
+                        b03.setTextColor(Color.BLACK);
+                        b04.setTextColor(Color.BLACK);
+                        b05.setTextColor(Color.BLACK);
+                        */
+                        // b01.setTextColor(Color.BLUE);
+                        b35.setBackgroundResource(R.drawable.fill);
                         // tv5.setBackgroundColor(Color.BLUE);
                         value.setAns4(b35.getText().toString());
                         // b5.setBackgroundColor(Color.BLUE);
