@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import monty.tscf.Fragments.BaseNavActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         bfeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, monty.tscf.Fragments.MainActivity.class));
+                startActivity(new Intent(MainActivity.this, BaseNavActivity.class));
             }
         });
 

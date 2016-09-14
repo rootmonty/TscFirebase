@@ -89,13 +89,7 @@ public class TeacherViewHolder extends RecyclerView.ViewHolder {
                             b03.setBackgroundResource(R.color.standardwhite);
                             b05.setBackgroundResource(R.color.standardwhite);
                         }
-                       /*
-                        b02.setTextColor(Color.BLACK);
 
-                        b03.setTextColor(Color.BLACK);
-                        b04.setTextColor(Color.BLACK);
-                        b05.setTextColor(Color.BLACK);
-                        */
                         // b01.setTextColor(Color.BLUE);
                         b01.setBackgroundResource(R.drawable.fill);
                         // tv1.setBackgroundColor(Color.BLUE);

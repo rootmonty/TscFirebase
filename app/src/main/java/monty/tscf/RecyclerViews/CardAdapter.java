@@ -33,43 +33,13 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
 
     Context context;
     LayoutInflater inflater;
-    // Firebase mref;
-    // FireObject values;
-    // FirePOJO valuenew;
+
 
     public CardAdapter(Context context) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
-        //  mref = new Firebase("https://tscf-b4925.firebaseio.com/database/");
-
-
     }
-
-
-   /* View.OnClickListener clicklistener1 = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //changes.setVisibility(view.VISIBLE);
-            //TASK TO DO : SHOW THE HIDDEN EDITTEXT AND QUESTION
-            //Meanwhile TOAST
-
-            Toast.makeText(context ,"Display hidden fragment",Toast.LENGTH_SHORT).show();
-
-
-        }
-    };
-    */
-/*
-    View.OnLongClickListener clicklistener2 = new View.OnLongClickListener() {
-        @Override
-        public boolean onLongClick(View view) {
-            Toast.makeText(context,"Brings invisible segment Back", Toast.LENGTH_SHORT).show();
-            return false;
-        }
-    };
-
-    */
 
     @Override
     public CardViewholder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -82,16 +52,24 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
     @Override
     public void onBindViewHolder(CardViewholder holder, int position) {
 
+        if (holder.itemView == null)
         holder.ques.setText(ques[position]);
-        //holder.ratingBar.getRating();
-        // holder.radioGroup.getCheckedRadioButtonId();
-        holder.changes.setText("How would you like to change");
-        //  value.setRating(holder.b);
-        holder.change.getText();
-        //  valuenew.setEditfeed(holder.change.getText().toString().trim());
-        //  mref.push().child(String.valueOf(position) + "Card").setValue(valuenew);
+        else {
+            holder.ques.setText(ques[position]);
+            holder.tv1.setBackgroundResource(R.color.standardwhite);
+            holder.tv2.setBackgroundResource(R.color.standardwhite);
+            holder.tv3.setBackgroundResource(R.color.standardwhite);
+            holder.tv5.setBackgroundResource(R.color.standardwhite);
+            holder.tv4.setBackgroundResource(R.color.standardwhite);
 
+        }
 
+      /*holder.tv1.setOnClickListener(clicklistener);
+        holder.tv2.setOnClickListener(clicklistener);
+        holder.tv3.setOnClickListener(clicklistener);
+        holder.tv4.setOnClickListener(clicklistener);
+        holder.tv5.setOnClickListener(clicklistener);
+        */
 
     }
 
@@ -99,4 +77,10 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
     public int getItemCount() {
         return ques.length;
     }
+
+
+    public long getItemId(int position) {
+        return super.getItemId(position);
+    }
+
 }
