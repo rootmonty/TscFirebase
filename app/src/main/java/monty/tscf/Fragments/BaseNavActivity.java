@@ -1,44 +1,42 @@
-package monty.tscf;
+package monty.tscf.Fragments;
 
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
 
-import android.widget.LinearLayout;
+import com.firebase.client.Firebase;
 
+import monty.tscf.R;
+import monty.tscf.Welcome;
 
 /**
- * Created by monty on 13/9/16.
+ * Created by monty on 14/9/16.
  */
-public class Welcome extends Fragment {
+public class BaseNavActivity extends AppCompatActivity {
 
-    LinearLayout line;
-    // ListView mDrawerList;
-    //  ArrayAdapter<String> adapter;
-    //  ActionBarDrawerToggle actionBarDrawerToggle;
+    ListView mDrawerList;
+    ArrayAdapter<String> adapter;
 
-
-    // Toolbar toolbar;
-
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.navidrawer, container, false);
-      /*  Firebase.setAndroidContext(root.getContext());
-        mDrawerList = (ListView) root.findViewById(R.id.nav_list);
-        line = (LinearLayout) root.findViewById(R.id.linear1);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.navmainactivity);
+        Firebase.setAndroidContext(this);
+        //back = (ImageView) findViewById(R.id.back);
+        //back.setBackgroundResource(R.drawable.final_options_02);
+        mDrawerList = (ListView) findViewById(R.id.nav_list);
         addDraweritems();
 
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-        */
-
-        return root;
     }
 
-/*
     public void bringthis(int position) {
         Fragment fragment = null;
         switch (position) {
@@ -66,12 +64,12 @@ public class Welcome extends Fragment {
         }
 
         if (fragment != null) {
-            FragmentManager fragmentmanager = getFragmentManager();
+            FragmentManager fragmentmanager = getSupportFragmentManager();
             fragmentmanager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
-            mDrawerList.closeDrawer(mDrawerList);
+            //mDrawerList.closeDrawer(mDrawerList);
         }
 
     }
@@ -79,9 +77,14 @@ public class Welcome extends Fragment {
     private void addDraweritems() {
 
         String[] itArray = {"Home", "AboutUs", "General Feedback", "StaffFeedback", "Teachers Feedback", "Exit"};
-        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, itArray);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itArray);
         mDrawerList.setAdapter(adapter);
     }
-   */
 
+    private class DrawerItemClickListener implements AdapterView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            bringthis(i);
+        }
+    }
 }

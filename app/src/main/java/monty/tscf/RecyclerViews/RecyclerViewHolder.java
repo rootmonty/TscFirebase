@@ -38,7 +38,6 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
     public RecyclerViewHolder(final View itemView) {
         super(itemView);
 
-
         mref = new Firebase("https://tscf-b4925.firebaseio.com/stafffeedback/");
         staff = (TextView) itemView.findViewById(R.id.list_title);
         tv2 = (Button) itemView.findViewById(R.id.list_desc);

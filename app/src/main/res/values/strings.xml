@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">TscF</string>
+    <!-- information about the aboutus string -->
+    <string name="xxx">------------------------------------
+    -------------------------------------------------------
+    -------------------------------------------------------
+    --------------------------------------------------------
+    --------------------------------------------------------
+    --------------------------------------------------------
+    --------------------------------------------------------
+    -----------------------------------------------</string>
+    <string name="openDrawer">Open Drawer </string>
+    <string name="closeDrawer">Close Drawer </string>
     <!--  contains layout featuring strings only -->
         <string name="action_sign_in_short">Register</string>
         <string name="signup">signup</string>
