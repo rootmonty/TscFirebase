@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,6 +69,34 @@ public class ResetPasswordActivity extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menu) {
+
+        int id = menu.getItemId();
+        switch (id) {
+            case R.id.action_Developer:
+                Toast.makeText(this, "Developed by Drmanhattan", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_settings:
+                Toast.makeText(this, "Shows the Settings in Dialog box", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
+        //if (actionBarDrawerToggle.onOptionsItemSelected(menu))
+        // {
+        //  return true;
+        // }
+        return super.onOptionsItemSelected(menu);
     }
 
 }

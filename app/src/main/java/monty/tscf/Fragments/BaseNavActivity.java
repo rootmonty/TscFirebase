@@ -40,8 +40,10 @@ public class BaseNavActivity extends AppCompatActivity {
         //back.setBackgroundResource(R.drawable.final_options_02);
         mDrawerList = (ListView) findViewById(R.id.nav_list);
         mdrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+
         addDraweritems();
 
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,24 +69,17 @@ public class BaseNavActivity extends AppCompatActivity {
             }
         };
 
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-
-        getMenuInflater().inflate(R.menu.menu_main,menu);
-        return true;
-    }
 
     public void bringthis(int position) {
-        Fragment fragment = null;
+        Fragment fragment = new introfragment();
         switch (position) {
             case 0:
-                fragment = new Welcome();
+                fragment = new introfragment();
                 break;
             case 1:
-                fragment = new Aboutus();
+                fragment = new Welcome();
                 break;
             case 2:
                 fragment = new TopRatedFragment();
@@ -99,6 +94,7 @@ public class BaseNavActivity extends AppCompatActivity {
                 fragment = new Exit();
                 break;
             default:
+                new introfragment();
                 break;
 
         }
@@ -114,6 +110,12 @@ public class BaseNavActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem menu) {
 
@@ -139,7 +141,7 @@ public class BaseNavActivity extends AppCompatActivity {
 
     private void addDraweritems() {
 
-        String[] itArray = {"Home", "AboutUs", "General Feedback", "StaffFeedback", "Teachers Feedback", "Exit"};
+        String[] itArray = {"Introduction", "AboutUs", "General Feedback", "StaffFeedback", "Teachers Feedback", "Exit"};
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itArray);
         mDrawerList.setAdapter(adapter);
     }
