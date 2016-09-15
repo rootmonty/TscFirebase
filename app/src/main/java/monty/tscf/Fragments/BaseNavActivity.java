@@ -28,7 +28,7 @@ import monty.tscf.Welcome;
 /**
  * Created by monty on 14/9/16.
  */
-public class BaseNavActivity extends AppCompatActivity {
+public class BaseNavActivity extends MainActivity {
 
     ListView mDrawerList;
     ArrayAdapter<String> adapter;
@@ -74,6 +74,8 @@ public class BaseNavActivity extends AppCompatActivity {
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
         };
+        FragmentManager fragmentmanager = getSupportFragmentManager();
+        fragmentmanager.beginTransaction().replace(R.id.content_frame, new Instructions()).commit();
 
         /*
         includes the segment of code for the frame containing the images selection here.According to the selected image
@@ -89,19 +91,20 @@ public class BaseNavActivity extends AppCompatActivity {
         Fragment fragment = null;
 
         switch (position) {
-            case 0:
+            case 1:
                 fragment = new TopRatedFragment();
                 break;
-            case 1:
+            case 2:
                 fragment = new GamesFragment();
                 break;
-            case 2:
+            case 3:
                 fragment = new TeacherFragment();
                 break;
-            case 3:
-                fragment = new Exit();
+            case 0:
+                fragment = new Instructions();
                 break;
             case 4:
+                Toast.makeText(getApplicationContext(), "Exiting from feedback form", Toast.LENGTH_SHORT).show();
                 finish();
                 break;
 
@@ -149,7 +152,7 @@ public class BaseNavActivity extends AppCompatActivity {
 
     private void addDraweritems() {
 
-        String[] itArray = {"General Feedback", "StaffFeedback", "Teachers Feedback", "GetTscore", "Exit"};
+        String[] itArray = {"Instructions", "General Feedback", "StaffFeedback", "Teachers Feedback", "EXIT"};
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itArray);
         mDrawerList.setAdapter(adapter);
     }

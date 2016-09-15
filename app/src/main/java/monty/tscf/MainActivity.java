@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 import monty.tscf.Fragments.BaseNavActivity;
 import monty.tscf.Fragments.introfragment;
 
-public class MainActivity extends BaseNavActivity {
+public class MainActivity extends AppCompatActivity {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
             changeEmail, changePassword, sendEmail, remove, signOut;
@@ -251,7 +251,7 @@ public class MainActivity extends BaseNavActivity {
             @Override
             public void onClick(View v) {
                 signOut();
-                startActivity(new Intent(MainActivity.this, BaseNavActivity.class));
+                startActivity(new Intent(MainActivity.this, introfragment.class));
             }
         });
 

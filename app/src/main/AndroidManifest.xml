@@ -17,10 +17,10 @@
         <activity android:name=".Fragments.MainActivity">
 
         </activity>
+        <activity android:name=".Fragments.introfragment" />
+
         <activity android:name=".Fragments.BaseNavActivity"></activity>
-        <activity
-            android:name=".Splash"
-            android:theme="@style/SplashTheme">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
