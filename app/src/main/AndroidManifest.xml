@@ -9,23 +9,25 @@
         android:label="TScore"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginSection.LoginActivity">
         </activity>
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".LoginSection.SignupActivity" />
+        <activity android:name=".LoginSection.MainActivity" />
+        <activity android:name=".LoginSection.ResetPasswordActivity" />
         <activity android:name=".Fragments.MainActivity">
 
         </activity>
         <activity android:name=".Fragments.introfragment" />
 
-        <activity android:name=".Fragments.BaseNavActivity"></activity>
-        <activity android:name=".Splash">
+        <activity android:name=".Fragments.BaseNavActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".LoginSection.Splash">
+
         </activity>
 
     </application>

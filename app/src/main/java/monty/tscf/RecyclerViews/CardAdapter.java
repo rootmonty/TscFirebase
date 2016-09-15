@@ -1,18 +1,23 @@
 package monty.tscf.RecyclerViews;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import monty.tscf.R;
 
 /**
  * Created by monty on 4/9/16.
  */
-public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
+public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
 
+    public static int CARD_VAL = 1;
+    public static int BUTTON_VAL = 2;
     String[] ques = {"How would you grade the Teachers",
             "How Did You Find The Study Material",
             "How Was The Coaching Infrastructure",
@@ -27,13 +32,12 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
             "How Were The Powerpoint Presentations",
             "Quality of tests in regular time intervals",
             "Syllabus coverage in tests",
-    "Test results/feedback on time",
-    "Doubt clearance after tests",
-    "Remedial classes after tests"};
-
+            "Test results/feedback on time",
+            "Doubt clearance after tests",
+            "Remedial classes after tests"};
     Context context;
     LayoutInflater inflater;
-
+    // View iview;
 
     public CardAdapter(Context context) {
 
@@ -42,27 +46,59 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
     }
 
     @Override
-    public CardViewholder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CarViewholder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = inflater.inflate(R.layout.cardview, parent, false);
-        CardViewholder cardholder = new CardViewholder(view);
-        return cardholder;
+        CarViewholder viewholder;
+        View iview;
+        if (viewType == CARD_VAL) {
+            iview = inflater.inflate(R.layout.cardview, parent, false);
+            viewholder = new GenericViewholder(iview);
+            return viewholder;
+        } else {
+            iview = inflater.inflate(R.layout.button, parent, false);
+            viewholder = new ButtonViewHolder(iview);
+            return viewholder;
+
+        }
     }
 
     @Override
-    public void onBindViewHolder(CardViewholder holder, int position) {
+    public void onBindViewHolder(CarViewholder holder, int position) {
+        if (getItemViewType(position) == BUTTON_VAL || position == getItemCount()) {
+            Log.i("DEBUG", "hun" + getItemViewType(position));
 
-        if (holder.itemView == null)
-        holder.ques.setText(ques[position]);
-        else {
-            holder.ques.setText(ques[position]);
-            holder.tv1.setBackgroundResource(R.color.standardwhite);
-            holder.tv2.setBackgroundResource(R.color.standardwhite);
-            holder.tv3.setBackgroundResource(R.color.standardwhite);
-            holder.tv5.setBackgroundResource(R.color.standardwhite);
-            holder.tv4.setBackgroundResource(R.color.standardwhite);
+            ButtonViewHolder buttonViewHolder = (ButtonViewHolder) holder;
+            Log.i("DEBUG", "" + getItemViewType(position));
 
+            Log.i("DEBUG", "hun" + getItemViewType(position));
+
+            buttonViewHolder.bottombutton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(context, "Button Clicked", Toast.LENGTH_LONG).show();
+                }
+            });
         }
+
+        if (getItemViewType(position) == CARD_VAL && position < getItemCount()) {
+            Log.i("DEBUG", "" + getItemViewType(position));
+
+            GenericViewholder genericViewholder = (GenericViewholder) holder;
+            // if (genericViewholder.itemView == null)
+            //  genericViewholder.ques.setText(ques[position]);
+            //  else {
+            genericViewholder.ques.setText(ques[position]);
+            genericViewholder.tv1.setBackgroundResource(R.color.standardwhite);
+            genericViewholder.tv2.setBackgroundResource(R.color.standardwhite);
+            genericViewholder.tv3.setBackgroundResource(R.color.standardwhite);
+            genericViewholder.tv5.setBackgroundResource(R.color.standardwhite);
+            genericViewholder.tv4.setBackgroundResource(R.color.standardwhite);
+
+            // }
+        }
+        // else
+        // holder.bottomb.setText("SUBMIT");
+
 
       /*holder.tv1.setOnClickListener(clicklistener);
         holder.tv2.setOnClickListener(clicklistener);
@@ -78,9 +114,17 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewholder> {
         return ques.length;
     }
 
-
+    @Override
     public long getItemId(int position) {
         return super.getItemId(position);
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        return (position <= ques.length - 1) ? CARD_VAL : BUTTON_VAL;
+
+
+    }
+
 }
+

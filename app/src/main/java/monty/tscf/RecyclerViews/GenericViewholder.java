@@ -16,14 +16,15 @@ import monty.tscf.POJO.FirePOJO;
 /**
  * Created by monty on 4/9/16.
  */
-public class CardViewholder extends RecyclerView.ViewHolder {
+public class GenericViewholder extends CarViewholder {
 
     TextView ques;
     TextView tv1, tv2, tv3, tv4, tv5;
     Firebase mref;
     FirePOJO value = new FirePOJO();
+    // Button bottomb;
 
-    public CardViewholder(View itemView) {
+    public GenericViewholder(View itemView) {
         super(itemView);
 
         ques = (TextView) itemView.findViewById(R.id.setQuestion);
@@ -32,6 +33,7 @@ public class CardViewholder extends RecyclerView.ViewHolder {
         tv3 = (TextView) itemView.findViewById(R.id.three);
         tv4 = (TextView) itemView.findViewById(R.id.four);
         tv5 = (TextView) itemView.findViewById(R.id.five);
+        // bottomb = (Button) itemView.findViewById(R.id.button);
 
         View.OnClickListener clicklistener = new View.OnClickListener() {
             @Override

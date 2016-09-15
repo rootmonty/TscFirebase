@@ -1,11 +1,11 @@
-package monty.tscf;
+package monty.tscf.LoginSection;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import monty.tscf.Fragments.BaseNavActivity;
 import monty.tscf.Fragments.introfragment;
+import monty.tscf.R;
 
 /**
  * Created by monty on 15/9/16.

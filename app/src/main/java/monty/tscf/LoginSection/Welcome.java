@@ -1,4 +1,4 @@
-package monty.tscf;
+package monty.tscf.LoginSection;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.LinearLayout;
+
+import monty.tscf.R;
 
 
 /**

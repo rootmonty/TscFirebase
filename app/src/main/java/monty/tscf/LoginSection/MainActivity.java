@@ -1,4 +1,4 @@
-package monty.tscf;
+package monty.tscf.LoginSection;
 
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import monty.tscf.Fragments.BaseNavActivity;
 import monty.tscf.Fragments.introfragment;
+import monty.tscf.R;
 
 public class MainActivity extends AppCompatActivity {
 

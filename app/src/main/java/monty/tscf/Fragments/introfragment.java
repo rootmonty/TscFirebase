@@ -3,16 +3,13 @@ package monty.tscf.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import monty.tscf.LoginActivity;
+import monty.tscf.LoginSection.LoginActivity;
 import monty.tscf.R;
 
 /**
