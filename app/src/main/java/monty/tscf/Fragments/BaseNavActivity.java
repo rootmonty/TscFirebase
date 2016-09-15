@@ -1,5 +1,6 @@
 package monty.tscf.Fragments;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -18,6 +21,7 @@ import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 
+import monty.tscf.LoginActivity;
 import monty.tscf.R;
 import monty.tscf.Welcome;
 
@@ -30,6 +34,8 @@ public class BaseNavActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     DrawerLayout mdrawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    //adding images on the background frame to select among student,teacher,parent,staff
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -69,32 +75,34 @@ public class BaseNavActivity extends AppCompatActivity {
             }
         };
 
+        /*
+        includes the segment of code for the frame containing the images selection here.According to the selected image
+        the user will be sent to that section of the code only
+        eg a student can rate anyone but a teacher can rate only the management staff
+         */
+
     }
 
 
     public void bringthis(int position) {
-        Fragment fragment = new introfragment();
+
+        Fragment fragment = null;
+
         switch (position) {
             case 0:
-                fragment = new introfragment();
-                break;
-            case 1:
-                fragment = new Welcome();
-                break;
-            case 2:
                 fragment = new TopRatedFragment();
                 break;
-            case 3:
+            case 1:
                 fragment = new GamesFragment();
                 break;
-            case 4:
+            case 2:
                 fragment = new TeacherFragment();
                 break;
-            case 5:
+            case 3:
                 fragment = new Exit();
                 break;
-            default:
-                new introfragment();
+            case 4:
+                finish();
                 break;
 
         }
@@ -141,7 +149,7 @@ public class BaseNavActivity extends AppCompatActivity {
 
     private void addDraweritems() {
 
-        String[] itArray = {"Introduction", "AboutUs", "General Feedback", "StaffFeedback", "Teachers Feedback", "Exit"};
+        String[] itArray = {"General Feedback", "StaffFeedback", "Teachers Feedback", "GetTscore", "Exit"};
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itArray);
         mDrawerList.setAdapter(adapter);
     }
