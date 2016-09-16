@@ -18,10 +18,11 @@ import monty.tscf.POJO.Staff;
 /**
  * Created by monty on 1/9/16.
  */
-public class RecyclerViewHolder extends RecyclerView.ViewHolder {
+public class RecyclerViewHolder extends CarViewholder {
 
     TextView staff;
-    Button tv2;
+    LinearLayout visible;
+    // Button tv2;
     //Adding buttons for the rating questions feedback
     //imageview onclick should toast a message about the opening of activity for feedback
     //feedback should submit the data
@@ -40,7 +41,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
         mref = new Firebase("https://tscf-b4925.firebaseio.com/stafffeedback/");
         staff = (TextView) itemView.findViewById(R.id.list_title);
-        tv2 = (Button) itemView.findViewById(R.id.list_desc);
+        visible = (LinearLayout) itemView.findViewById(R.id.visible);
         imageView = (ImageView) itemView.findViewById(R.id.list_avatar);
         staff.setTextColor(Color.BLACK);
         q1 = (TextView) itemView.findViewById(R.id.staffq1);
@@ -69,6 +70,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         View.OnClickListener clicklistener0 = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                visible.setVisibility(View.INVISIBLE);
                 Toast.makeText(view.getContext(), "Layout is made visible", Toast.LENGTH_SHORT).show();
                 linearLayout.setVisibility(View.VISIBLE);
             }
@@ -422,18 +424,24 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
             }
         };
 
-        tv2.setOnClickListener(new View.OnClickListener() {
+
+        visible.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+               /*
                 value.setStaffname(staff.getText().toString());
                 value.setQ1(q1.getText().toString());
                 value.setQ2(q2.getText().toString());
                 value.setQ3(q3.getText().toString());
                 mref.child("Staff").push().setValue(value);
                 Toast.makeText(view.getContext(), "Your Staff Submission is Done", Toast.LENGTH_SHORT).show();
+                */
                 linearLayout.setVisibility(View.INVISIBLE);
             }
         });
+
+
         imageView.setOnClickListener(clicklistener0);
         b01.setOnClickListener(clicklistener1);
         b02.setOnClickListener(clicklistener1);

@@ -86,6 +86,7 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
             buttonViewHolder.bottombutton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Toast.makeText(view.getContext(), " DATA Sent with the Comment", Toast.LENGTH_SHORT).show();
                     Toast.makeText(context, "Button Clicked", Toast.LENGTH_LONG).show();
                 }
             });

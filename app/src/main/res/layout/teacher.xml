@@ -43,7 +43,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b2"
@@ -51,7 +52,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b3"
@@ -59,7 +62,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b4"
@@ -67,7 +72,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b5"
@@ -75,7 +82,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +107,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b12"
@@ -106,7 +117,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b13"
@@ -114,7 +127,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b14"
@@ -122,7 +137,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b15"
@@ -130,7 +147,9 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -153,7 +172,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b22"
@@ -161,7 +181,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b23"
@@ -169,7 +190,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b24"
@@ -177,7 +199,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b25"
@@ -185,7 +208,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -208,7 +232,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b32"
@@ -216,7 +241,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b33"
@@ -224,7 +250,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b34"
@@ -232,7 +259,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b35"
@@ -240,7 +268,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -263,7 +292,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b42"
@@ -271,7 +301,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b43"
@@ -279,7 +310,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b44"
@@ -287,7 +319,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b45"
@@ -295,7 +328,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -318,7 +352,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="1" />
+                android:text="1"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b52"
@@ -326,7 +361,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="2" />
+                android:text="2"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b53"
@@ -334,7 +370,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="3" />
+                android:text="3"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b54"
@@ -342,7 +379,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="4" />
+                android:text="4"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/b55"
@@ -350,7 +388,8 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@color/standardwhite"
-                android:text="5" />
+                android:text="5"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout

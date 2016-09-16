@@ -11,6 +11,10 @@
     -----------------------------------------------</string>
     <string name="openDrawer">Open Drawer </string>
     <string name="closeDrawer">Close Drawer </string>
+    <!-- contains the description of the string -->
+    <string name="description">Please understand the notion of the Feedback Section.It enables us to get the
+    correct and unbiased evaluation of the faculty and managemnent and this helps us in bringing out the best among the best
+    and provide the most exuberant ambiance to the students</string>
     <!--  contains layout featuring strings only -->
         <string name="action_sign_in_short">Register</string>
         <string name="signup">signup</string>

@@ -10,44 +10,56 @@ import android.widget.Toast;
 import monty.tscf.R;
 
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<CarViewholder> {
 
+    public final static int CARD_VAL = 1;
+    public static final int BUTTON_VAL = 2;
     String[] name = {"YOGITHA ", " NEHA APTE ", "NEHA LAD", "RUCHI",
             "NEELAM", "BHUMIKA"};
     // RatingBar ratingBar;
     Context context;
     LayoutInflater inflater;
 
-    View.OnClickListener clickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-            RecyclerViewHolder vholder = (RecyclerViewHolder) v.getTag();
-            int position = vholder.getLayoutPosition();
-
-            Toast.makeText(context, "It Will take you to " + position + " Form ", Toast.LENGTH_LONG).show();
-
-        }
-    };
 
     public RecyclerAdapter(Context context) {
-
         this.context = context;
         inflater = LayoutInflater.from(context);
     }
 
     @Override
-    public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = inflater.inflate(R.layout.item_list, parent, false);
+    public CarViewholder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        RecyclerViewHolder viewHolder = new RecyclerViewHolder(v);
-        return viewHolder;
+        View v;
+        switch (viewType) {
+            case CARD_VAL:
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false);
+                return new RecyclerViewHolder(v);
+            case BUTTON_VAL:
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.button, parent, false);
+                return new ButtonViewHolder(v);
+        }
+        return null;
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(CarViewholder holder, int position) {
 
-        holder.staff.setText(name[position]);
+        if (getItemViewType(position) == CARD_VAL && position < getItemCount()) {
+            RecyclerViewHolder recyclerViewHolder = (RecyclerViewHolder) holder;
+            recyclerViewHolder.staff.setText(name[position]);
+        } else {
+            final ButtonViewHolder buttonViewHolder = (ButtonViewHolder) holder;
+            buttonViewHolder.bottombutton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    buttonViewHolder.comment.getText();
+                    buttonViewHolder.comment.setText("");
+                    Toast.makeText(view.getContext(), " DATA Sent with the Comment", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        }
+        // holder.staff.setText(name[position]);
         // holder.tv2.setOnClickListener(clickListener);
         // holder.tv2.setTag(holder);
         // holder.imageView.setOnClickListener(clickListener);
@@ -57,6 +69,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     @Override
     public int getItemCount() {
-        return name.length;
+        return name.length + 1;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return (position < getItemCount() - 1) ? CARD_VAL : BUTTON_VAL;
     }
 }

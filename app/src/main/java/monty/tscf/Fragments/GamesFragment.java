@@ -28,7 +28,7 @@ public class GamesFragment extends android.support.v4.app.Fragment {
         View rootview = inflater.inflate(R.layout.fragment_games, container, false);
         recyclerView = (RecyclerView) rootview.findViewById(R.id.my_recycler_view);
         // submit = (Button) rootview.findViewById(R.id.button1);
-        RecyclerAdapter adapter = new RecyclerAdapter(getActivity());
+        RecyclerAdapter adapter = new RecyclerAdapter(getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
 
