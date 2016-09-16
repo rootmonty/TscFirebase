@@ -15,6 +15,17 @@ import monty.tscf.R;
  * Created by monty on 4/9/16.
  */
 public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
+    /*
+    Important thing to notice here is that the multiple viewholders are needed to be checked and aligned
+    with respect to the position and viewtype of the layout
+    Viewtype: returns default value 0 for similar layout so we overrided it with two values
+    one for the cardview and one for the Master submit section
+     Pl note :::: Always create different child classes and extend it to the master class to get better result and
+     better judge of the execution taking place.
+     OncreateViewholder creates and inflates the view so here we need to distinctly create different objects of
+     child classes to get different results
+
+     */
 
     public static int CARD_VAL = 1;
     public static int BUTTON_VAL = 2;
@@ -51,11 +62,11 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
         CarViewholder viewholder;
         View iview;
         if (viewType == CARD_VAL) {
-            iview = inflater.inflate(R.layout.cardview, parent, false);
+            iview = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview, parent, false);
             viewholder = new GenericViewholder(iview);
             return viewholder;
         } else {
-            iview = inflater.inflate(R.layout.button, parent, false);
+            iview = LayoutInflater.from(parent.getContext()).inflate(R.layout.button, parent, false);
             viewholder = new ButtonViewHolder(iview);
             return viewholder;
 
@@ -64,7 +75,7 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
 
     @Override
     public void onBindViewHolder(CarViewholder holder, int position) {
-        if (getItemViewType(position) == BUTTON_VAL || position == getItemCount()) {
+        if (getItemViewType(position) == BUTTON_VAL || position == getItemCount() + 1) {
             Log.i("DEBUG", "hun" + getItemViewType(position));
 
             ButtonViewHolder buttonViewHolder = (ButtonViewHolder) holder;
@@ -80,7 +91,7 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
             });
         }
 
-        if (getItemViewType(position) == CARD_VAL && position < getItemCount()) {
+        if (getItemViewType(position) == CARD_VAL && position <= getItemCount()) {
             Log.i("DEBUG", "" + getItemViewType(position));
 
             GenericViewholder genericViewholder = (GenericViewholder) holder;
@@ -88,11 +99,11 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
             //  genericViewholder.ques.setText(ques[position]);
             //  else {
             genericViewholder.ques.setText(ques[position]);
-            genericViewholder.tv1.setBackgroundResource(R.color.standardwhite);
-            genericViewholder.tv2.setBackgroundResource(R.color.standardwhite);
-            genericViewholder.tv3.setBackgroundResource(R.color.standardwhite);
-            genericViewholder.tv5.setBackgroundResource(R.color.standardwhite);
-            genericViewholder.tv4.setBackgroundResource(R.color.standardwhite);
+            // genericViewholder.tv1.setBackgroundResource(R.color.standardwhite);
+            // genericViewholder.tv2.setBackgroundResource(R.color.standardwhite);
+            // genericViewholder.tv3.setBackgroundResource(R.color.standardwhite);
+            //  genericViewholder.tv5.setBackgroundResource(R.color.standardwhite);
+            //  genericViewholder.tv4.setBackgroundResource(R.color.standardwhite);
 
             // }
         }
@@ -111,7 +122,7 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
 
     @Override
     public int getItemCount() {
-        return ques.length;
+        return ques.length + 1;
     }
 
     @Override
@@ -121,7 +132,9 @@ public class CardAdapter extends RecyclerView.Adapter<CarViewholder> {
 
     @Override
     public int getItemViewType(int position) {
-        return (position <= ques.length - 1) ? CARD_VAL : BUTTON_VAL;
+        //check for the termination point
+        //for the last point insert button
+        return (position < ques.length) ? CARD_VAL : BUTTON_VAL;
 
 
     }

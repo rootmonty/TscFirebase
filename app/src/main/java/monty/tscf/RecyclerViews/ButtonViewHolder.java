@@ -3,6 +3,7 @@ package monty.tscf.RecyclerViews;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import monty.tscf.R;
 
@@ -12,10 +13,13 @@ import monty.tscf.R;
 public class ButtonViewHolder extends CarViewholder {
 
     Button bottombutton;
+    EditText comment;
 
     public ButtonViewHolder(View itemView) {
         super(itemView);
         bottombutton = (Button) itemView.findViewById(R.id.button);
+        comment = (EditText) itemView.findViewById(R.id.comment);
+
 
     }
 }
